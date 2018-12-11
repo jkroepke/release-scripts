@@ -78,7 +78,7 @@ cd ${GIT_REPO_DIR}
 if ! git diff-files --quiet --ignore-submodules --
 then
   # commit next snapshot versions
-  git commit -am "Start next iteration with ${NEXT_SNAPSHOT_VERSION} after hotfix ${HOTFIX_VERSION}"
+  git commit -am "[skip ci] Start next iteration with ${NEXT_SNAPSHOT_VERSION} after hotfix ${HOTFIX_VERSION}"
 else
   echo "Nothing to commit..."
 fi

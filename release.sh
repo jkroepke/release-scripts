@@ -84,7 +84,7 @@ cd ${GIT_REPO_DIR}
 if ! git diff-files --quiet --ignore-submodules --
 then
   # Commit next snapshot versions into develop
-  git commit -am "Start next iteration with ${NEXT_SNAPSHOT_VERSION}"
+  git commit -am "[skip ci] Start next iteration with ${NEXT_SNAPSHOT_VERSION}"
 else
   echo "Nothing to commit..."
 fi
